@@ -1,0 +1,103 @@
+import type { MaintenanceRecord } from './types';
+
+export const maintenanceRecords: MaintenanceRecord[] = [
+	{
+		id: 'mnt1',
+		unitCode: 'SPT-AR-39-H-003',
+		productId: '2',
+		productName: 'Sepatu Hiking Arei',
+		variantName: '39 / Hitam',
+		status: 'Menunggu pemeriksaan',
+		damageLevel: 'Ringan',
+		issue: 'Sol bagian depan mulai terlepas setelah pengembalian.',
+		source: 'Pengembalian RNT-261118-001',
+		location: 'Area QC',
+		assignee: 'Belum ditentukan',
+		estimatedCost: 35_000,
+		actualCost: 0,
+		reportedAt: '19 Nov 2026, 10.15',
+		actions: '',
+		notes: 'Periksa jahitan dan kondisi sol keseluruhan.'
+	},
+	{
+		id: 'mnt2',
+		unitCode: 'CAR-CS60-B-001',
+		productId: '3',
+		productName: 'Carrier Consina 60L',
+		variantName: 'Biru',
+		status: 'Sedang dikerjakan',
+		damageLevel: 'Sedang',
+		issue: 'Buckle pinggang patah dan rain cover sobek.',
+		source: 'Pemeriksaan inventaris',
+		location: 'Meja servis',
+		assignee: 'Raka',
+		estimatedCost: 125_000,
+		actualCost: 80_000,
+		reportedAt: '17 Nov 2026, 15.30',
+		startedAt: '18 Nov 2026, 09.00',
+		actions: 'Ganti buckle dan tambal rain cover.',
+		notes: 'Buckle pengganti sudah tersedia.'
+	},
+	{
+		id: 'mnt3',
+		unitCode: 'TND-DM4-004',
+		productId: '1',
+		productName: 'Tenda Dome 4 Orang',
+		variantName: 'Standar',
+		status: 'Menunggu perbaikan',
+		damageLevel: 'Berat',
+		issue: 'Flysheet robek sekitar 20 cm dan satu frame bengkok.',
+		source: 'Pengembalian RNT-261110-008',
+		location: 'Gudang perawatan',
+		assignee: 'Dian',
+		estimatedCost: 275_000,
+		actualCost: 0,
+		reportedAt: '16 Nov 2026, 17.45',
+		actions: 'Ganti satu segmen frame dan patch flysheet.',
+		notes: 'Menunggu segmen frame dari pemasok.'
+	},
+	{
+		id: 'mnt4',
+		unitCode: 'HLP-BD-002',
+		productId: '6',
+		productName: 'Headlamp Black Diamond',
+		variantName: '300 Lumen',
+		status: 'Selesai',
+		damageLevel: 'Ringan',
+		issue: 'Kontak baterai kotor dan lampu berkedip.',
+		source: 'Pemeriksaan rutin',
+		location: 'Rak P2',
+		assignee: 'Raka',
+		estimatedCost: 25_000,
+		actualCost: 15_000,
+		reportedAt: '12 Nov 2026, 11.20',
+		startedAt: '12 Nov 2026, 13.00',
+		completedAt: '12 Nov 2026, 14.10',
+		actions: 'Bersihkan kontak baterai dan uji seluruh mode lampu.',
+		notes: 'Unit lulus uji selama 30 menit.'
+	},
+	{
+		id: 'mnt5',
+		unitCode: 'KMP-KV-003',
+		productId: '4',
+		productName: 'Kompor Portable',
+		variantName: 'Standar',
+		status: 'Tidak dapat diperbaiki',
+		damageLevel: 'Berat',
+		issue: 'Katup gas retak dan bodi mengalami deformasi.',
+		source: 'Pengembalian RNT-261105-004',
+		location: 'Area karantina',
+		assignee: 'Dian',
+		estimatedCost: 180_000,
+		actualCost: 25_000,
+		reportedAt: '8 Nov 2026, 16.00',
+		startedAt: '9 Nov 2026, 10.00',
+		completedAt: '9 Nov 2026, 11.30',
+		actions: 'Diagnostik dan uji kebocoran.',
+		notes: 'Tidak aman digunakan kembali. Unit harus dipensiunkan.'
+	}
+];
+
+export function findMaintenanceRecord(id: string) {
+	return maintenanceRecords.find((record) => record.id === id);
+}
