@@ -20,6 +20,7 @@
 	const mainItems = [
 		{ title: 'Dashboard', href: '/dashboard', route: '/(app)/dashboard', icon: LayoutDashboard },
 		{ title: 'Transaksi', href: '/transaksi', route: '/(app)/transaksi', icon: ShoppingBasket },
+		{ title: 'Pengembalian', href: '/pengembalian', route: '/(app)/pengembalian', icon: RotateCcw },
 		{ title: 'Semua Barang', href: '/inventaris', route: '/(app)/inventaris', icon: Archive },
 		{
 			title: 'Tambah Barang',
@@ -30,7 +31,6 @@
 	] as const;
 
 	const futureItems = [
-		{ title: 'Pengembalian', icon: RotateCcw },
 		{ title: 'Pelanggan', icon: Users },
 		{ title: 'Perawatan', icon: PackageCheck },
 		{ title: 'Laporan', icon: BarChart3 }
