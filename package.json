@@ -12,6 +12,7 @@
 		"#lib/maintenance/*": "./src/lib/maintenance/*.js",
 		"#lib/returns/*": "./src/lib/returns/*.js",
 		"#lib/reports/*": "./src/lib/reports/*.js",
+		"#lib/reservations/*": "./src/lib/reservations/*.js",
 		"#lib/transactions/*": "./src/lib/transactions/*.js",
 		"#lib/*": "./src/lib/*"
 	},
@@ -30,6 +31,7 @@
 		"test:maintenance": "bun src/lib/maintenance/calculation.test.ts",
 		"test:customers": "bun src/lib/customers/calculation.test.ts",
 		"test:reports": "bun src/lib/reports/calculation.test.ts",
+		"test:reservations": "bun src/lib/reservations/calculation.test.ts",
 		"db:push": "drizzle-kit push",
 		"db:generate": "drizzle-kit generate",
 		"db:migrate": "drizzle-kit migrate",

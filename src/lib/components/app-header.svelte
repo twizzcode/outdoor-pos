@@ -10,6 +10,8 @@
 		if (page.url.pathname === '/dashboard') return 'Dashboard';
 		if (page.url.pathname === '/inventaris/tambah') return 'Tambah Barang';
 		if (page.url.pathname.startsWith('/inventaris')) return 'Inventaris';
+		if (page.url.pathname === '/reservasi/tambah') return 'Reservasi Baru';
+		if (page.url.pathname.startsWith('/reservasi')) return 'Reservasi';
 		if (page.url.pathname === '/transaksi/baru') return 'Transaksi Baru';
 		if (page.url.pathname.startsWith('/transaksi')) return 'Transaksi';
 		if (page.url.pathname.startsWith('/pengembalian')) return 'Pengembalian';

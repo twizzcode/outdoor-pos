@@ -4,6 +4,7 @@
 	import {
 		Archive,
 		BarChart3,
+		CalendarClock,
 		ClipboardPlus,
 		LayoutDashboard,
 		PackageCheck,
@@ -19,6 +20,7 @@
 
 	const mainItems = [
 		{ title: 'Dashboard', href: '/dashboard', route: '/(app)/dashboard', icon: LayoutDashboard },
+		{ title: 'Reservasi', href: '/reservasi', route: '/(app)/reservasi', icon: CalendarClock },
 		{ title: 'Transaksi', href: '/transaksi', route: '/(app)/transaksi', icon: ShoppingBasket },
 		{ title: 'Pengembalian', href: '/pengembalian', route: '/(app)/pengembalian', icon: RotateCcw },
 		{ title: 'Perawatan', href: '/perawatan', route: '/(app)/perawatan', icon: PackageCheck },
