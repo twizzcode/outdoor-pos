@@ -11,6 +11,7 @@
 		"#lib/inventory/*": "./src/lib/inventory/*.js",
 		"#lib/maintenance/*": "./src/lib/maintenance/*.js",
 		"#lib/returns/*": "./src/lib/returns/*.js",
+		"#lib/reports/*": "./src/lib/reports/*.js",
 		"#lib/transactions/*": "./src/lib/transactions/*.js",
 		"#lib/*": "./src/lib/*"
 	},
@@ -28,6 +29,7 @@
 		"test:returns": "bun src/lib/returns/calculation.test.ts",
 		"test:maintenance": "bun src/lib/maintenance/calculation.test.ts",
 		"test:customers": "bun src/lib/customers/calculation.test.ts",
+		"test:reports": "bun src/lib/reports/calculation.test.ts",
 		"db:push": "drizzle-kit push",
 		"db:generate": "drizzle-kit generate",
 		"db:migrate": "drizzle-kit migrate",
@@ -54,6 +56,7 @@
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-svelte": "^3.24.1",
 		"globals": "^17.14.0",
+		"layerchart": "^2.0.0",
 		"mode-watcher": "^1.1.0",
 		"postgres": "^4.1.1",
 		"prettier": "^3.10.1",

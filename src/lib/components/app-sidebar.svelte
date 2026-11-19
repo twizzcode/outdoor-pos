@@ -23,6 +23,7 @@
 		{ title: 'Pengembalian', href: '/pengembalian', route: '/(app)/pengembalian', icon: RotateCcw },
 		{ title: 'Perawatan', href: '/perawatan', route: '/(app)/perawatan', icon: PackageCheck },
 		{ title: 'Pelanggan', href: '/pelanggan', route: '/(app)/pelanggan', icon: Users },
+		{ title: 'Laporan', href: '/laporan', route: '/(app)/laporan', icon: BarChart3 },
 		{ title: 'Semua Barang', href: '/inventaris', route: '/(app)/inventaris', icon: Archive },
 		{
 			title: 'Tambah Barang',
@@ -31,10 +32,6 @@
 			icon: ClipboardPlus
 		}
 	] as const;
-
-	const futureItems = [
-		{ title: 'Laporan', icon: BarChart3 }
-	];
 </script>
 
 <Sidebar.Root collapsible="icon" variant="inset">
@@ -79,29 +76,6 @@
 									</a>
 								{/snippet}
 							</Sidebar.MenuButton>
-						</Sidebar.MenuItem>
-					{/each}
-				</Sidebar.Menu>
-			</Sidebar.GroupContent>
-		</Sidebar.Group>
-
-		<Sidebar.Group>
-			<Sidebar.GroupLabel>Segera hadir</Sidebar.GroupLabel>
-			<Sidebar.GroupContent>
-				<Sidebar.Menu>
-					{#each futureItems as item (item.title)}
-						<Sidebar.MenuItem>
-							<Sidebar.MenuButton
-								aria-disabled="true"
-								class="pointer-events-none opacity-50"
-								tooltipContent={`${item.title} — segera hadir`}
-							>
-								<item.icon />
-								<span>{item.title}</span>
-							</Sidebar.MenuButton>
-							<Sidebar.MenuBadge class="group-data-[collapsible=icon]:hidden">
-								Segera
-							</Sidebar.MenuBadge>
 						</Sidebar.MenuItem>
 					{/each}
 				</Sidebar.Menu>
