@@ -14,6 +14,8 @@
 		if (page.url.pathname.startsWith('/transaksi')) return 'Transaksi';
 		if (page.url.pathname.startsWith('/pengembalian')) return 'Pengembalian';
 		if (page.url.pathname.startsWith('/perawatan')) return 'Perawatan';
+		if (page.url.pathname === '/pelanggan/tambah') return 'Tambah Pelanggan';
+		if (page.url.pathname.startsWith('/pelanggan')) return 'Pelanggan';
 		return 'OutdoorPOS';
 	});
 </script>

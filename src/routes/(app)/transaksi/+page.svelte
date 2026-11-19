@@ -163,13 +163,16 @@
 									<div onclick={(event) => event.stopPropagation()} role="presentation">
 										<DropdownMenu.Root>
 											<DropdownMenu.Trigger>
-												<Button
-													variant="ghost"
-													size="icon-sm"
-													aria-label={`Aksi ${transaction.code}`}
-												>
-													<MoreHorizontal />
-												</Button>
+												{#snippet child({ props })}
+													<Button
+														{...props}
+														variant="ghost"
+														size="icon-sm"
+														aria-label={`Aksi ${transaction.code}`}
+													>
+														<MoreHorizontal />
+													</Button>
+												{/snippet}
 											</DropdownMenu.Trigger><DropdownMenu.Content align="end">
 												<DropdownMenu.Item onclick={() => goto(detailRoute(transaction.id))}>
 													Lihat detail

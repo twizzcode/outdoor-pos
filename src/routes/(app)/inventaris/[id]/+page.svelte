@@ -141,9 +141,11 @@
 				<Button href={editRoute()}><Edit3 />Edit barang</Button>
 				<DropdownMenu.Root>
 					<DropdownMenu.Trigger>
-						<Button variant="outline" size="icon" aria-label="Aksi lainnya">
-							<MoreHorizontal />
-						</Button>
+						{#snippet child({ props })}
+							<Button {...props} variant="outline" size="icon" aria-label="Aksi lainnya">
+								<MoreHorizontal />
+							</Button>
+						{/snippet}
 					</DropdownMenu.Trigger><DropdownMenu.Content align="end">
 						<DropdownMenu.Item
 							onclick={() => toast.info('Duplikasi produk tersedia pada versi backend')}

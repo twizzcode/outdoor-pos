@@ -22,6 +22,7 @@
 		{ title: 'Transaksi', href: '/transaksi', route: '/(app)/transaksi', icon: ShoppingBasket },
 		{ title: 'Pengembalian', href: '/pengembalian', route: '/(app)/pengembalian', icon: RotateCcw },
 		{ title: 'Perawatan', href: '/perawatan', route: '/(app)/perawatan', icon: PackageCheck },
+		{ title: 'Pelanggan', href: '/pelanggan', route: '/(app)/pelanggan', icon: Users },
 		{ title: 'Semua Barang', href: '/inventaris', route: '/(app)/inventaris', icon: Archive },
 		{
 			title: 'Tambah Barang',
@@ -32,7 +33,6 @@
 	] as const;
 
 	const futureItems = [
-		{ title: 'Pelanggan', icon: Users },
 		{ title: 'Laporan', icon: BarChart3 }
 	];
 </script>
